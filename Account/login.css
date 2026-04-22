@@ -1,0 +1,109 @@
+/* ការរៀបចំទូទៅ */
+body {
+    margin: 0;
+    font-family: 'Khmer OS Battambang', Arial, sans-serif;
+    background: linear-gradient(135deg, #0d1117 0%, #1a237e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+.login-box {
+    background: #ffffff;
+    max-width: 400px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-header h1 {
+    color: #1a237e;
+    margin-bottom: 5px;
+}
+
+.login-header p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-field input:focus {
+    border-color: #3f3ffd;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    width: 100%;
+    padding: 14px;
+    background: #3f3ffd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-btn:hover {
+    background: #2e2ebd;
+}
+
+/* រចនា Loader (វិលៗ) */
+.loader {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3f3ffd;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    left: 47%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.signup-link {
+    margin-top: 25px;
+    font-size: 14px;
+}

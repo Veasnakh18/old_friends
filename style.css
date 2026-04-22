@@ -1,0 +1,905 @@
+.box-header{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 99px;
+    position: fixed;
+    left: 0px;
+    top:0px;
+    background-color: rgb(12, 12, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+/* -----for text-------- */
+.for_text{
+    font-family: cursive;
+    font-size: 30px;
+    position: absolute;
+    left:20px;
+    top:10px;
+    color:rgb(0, 255, 0);
+}
+/* -----flex item------------- */
+.flex_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    gap: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+width: 57px;
+height: 45px;
+border-radius: 50%;
+background-image: url("https://toppng.com/uploads/preview/user-account-management-logo-user-icon-11562867145a56rus2zwu.png");
+  background-size: cover;       /* fill the box */
+  background-position: center;  /* center the image */
+  background-repeat: no-repeat; /* prevent repeating */
+cursor: pointer;
+}
+
+
+.box img {
+width: 100%;
+height: 100%;
+  object-fit: cover;       /* keeps image nicely fitted */
+}
+.text:hover{
+    text-shadow: 0 0 5px red;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    color: greenyellow;
+}
+/* controll of section  */
+.controll_section{
+    top:100px;
+}
+/* ----------section flex ------------- */
+.flex_for_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 5px;
+}
+/* ------- for section 1------ */
+.section1{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 585px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 55, 149);
+    position: fixed;
+    left: 0px;
+    top: 103px;
+}
+/* ---------for section 2 ------ */
+.section2{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:0px;
+    width: 80%;
+    height: auto;
+    background-color: whitesmoke;
+        margin-left: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.style_text_title_section{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+/* --------box of which the picture------ */
+.box_for_photo{
+    border:1px solid none;
+    border-radius: 10px;
+    width: 100%;
+    height:500px;
+}
+.list_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.list_text{
+    scroll-behavior: auto;
+    overflow-wrap: anywhere;
+    overflow-y: auto;
+}
+/* -------information person ---------- */
+:root {
+            --primary-blue: #1a73e8;
+            --dark-blue: #0d47a1;
+            --text-light: #ffffff;
+            --card-bg: #f8f9fa;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Upper Section (Image Placeholder) */
+        .card-top {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+            position: relative;
+        }
+
+        .profile-placeholder {
+            width: 120px;
+            height: 120px;
+            background: #e1e4e8;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Lower Section (Info Box) */
+        .card-bottom {
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+            padding: 25px;
+            color: var(--text-light);
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        .info-row {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-right: 10px;
+            opacity: 0.9;
+        }
+
+        .value {
+            font-size: 1rem;
+            border-bottom: 1px dashed rgba(255,255,255,0.4);
+            flex: 1;
+            padding-bottom: 2px;
+        }
+
+        .icon-circle {
+            width: 24px;
+            height: 24px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: inline-block;
+            background-image: url('https://img.freepik.com/premium-psd/facebook-logo-blue-circle_705838-12823.jpg?semt=ais_hybrid&w=740&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+/* ----------------for footer ------------ */
+.footer {
+    background: #0d1117;
+    color: white;
+    padding: 40px 20px 10px;
+    margin-top: 50px;
+    position: sticky;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: #003759;
+}
+
+.fb-link {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.fb-link:hover {
+    color: #001e31;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+/* ---------------------break footer---------------- */
+/* -------for button ----- */
+#btn:hover{
+    background-color: blue;
+    color:white;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 4px 2px rgb(102, 102, 245);
+    border:1px solid none;
+}
+/* ----------- in data of student ------ */
+/* .data_of_personal{
+    border:1px solid black;
+    border-radius: 10px;
+    padding:0px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 200px;
+    background-color: rgb(21, 104, 247);
+    display: none;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+} */
+/* ---------------for hover ------------ */
+.person:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    .data_of_personal{
+        display: block;
+    }
+}
+/* --------------------------------------- */
+.text_in_div_data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 190px;
+}
+.facebook_logo{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.controll_style_logo_fb_data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 190px;
+    gap: 10px;
+}
+/* --------------------------------------------- */
+
+/* ----------------- for scroll picture ---------- */
+.box_for_photo{
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    display: flex;
+    gap: 10%;
+}
+
+/* ------------put the pictures---------------- */
+
+/* -----------list data left -------------------- */
+/* ប្តូរពណ៌ Sidebar ឱ្យស្រឡះភ្នែកជាងមុន និងដាក់ padding */
+.sidebar {
+    background-color: #f4f6f8;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 100px;
+}
+
+/* រចនាប្រអប់ព័ត៌មាន */
+.sidebar-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.sidebar-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #3f3ffd;
+    padding-bottom: 5px;
+}
+
+/* រចនាបញ្ជីខួបកំណើត */
+.birthday-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.birthday-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.birthday-list li:last-child {
+    border-bottom: none;
+}
+
+.bd-name {
+    font-weight: bold;
+    color: #555;
+}
+
+.bd-date {
+    color: #888;
+    font-size: 14px;
+}
+
+/* រចនាសាលរូបភាពអនុស្សាវរីយ៍ */
+.memory-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ដាក់ ២ ជួរឈរ */
+    gap: 10px;
+}
+
+.memory-gallery img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.memory-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* រចនាតំណភ្ជាប់រហ័ស */
+.sidebar-link {
+    display: block;
+    color: #3f3ffd;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.sidebar-link:hover {
+    text-decoration: underline;
+}
+.section1{
+    scroll-behavior: smooth;
+    overflow-y: auto;
+
+}
+.box-header{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 99px;
+    position: fixed;
+    left: 0px;
+    top:0px;
+    background-color: rgb(12, 12, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+/* -----for text-------- */
+.for_text{
+    font-family: cursive;
+    font-size: 30px;
+    position: absolute;
+    left:20px;
+    top:10px;
+    color:rgb(0, 255, 0);
+}
+/* -----flex item------------- */
+.flex_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    gap: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+    width: 57px;
+    height: 45px;
+    border-radius: 50%;
+    background-image: url("https://toppng.com/uploads/preview/user-account-management-logo-user-icon-11562867145a56rus2zwu.png");
+    background-size: cover;       /* fill the box */
+    background-position: center;  /* center the image */
+    background-repeat: no-repeat; /* prevent repeating */
+    cursor: pointer;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* keeps image nicely fitted */
+}
+.text:hover{
+    text-shadow: 0 0 5px red;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    color: greenyellow;
+}
+/* control of section  */
+.controll_section{
+    top:100px;
+}
+/* ----------section flex ------------- */
+.flex_for_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 5px;
+}
+/* ------- for section 1------ */
+.section1{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 585px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 55, 149);
+    position: fixed;
+    left: 0px;
+    top: 103px;
+}
+/* ---------for section 2 ------ */
+.section2{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:0px;
+    width: 80%;
+    height: auto;
+    background-color: whitesmoke;
+        margin-left: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.style_text_title_section{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+/* --------box of which the picture------ */
+.box_for_photo{
+    border:1px solid none;
+    border-radius: 10px;
+    width: 100%;
+    height:500px;
+}
+.list_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ---------controll information div row1 ---------- */
+.controll_list_information_row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap:5%;
+    flex-wrap: wrap; /* អោយវាចុះជួរ */
+    gap: 10px;
+}
+/* -------information person ---------- */
+
+    /* កំណត់ផ្ទៃខាងក្រោយ និងពុម្ពអក្សរ */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f2f5;
+        padding: 20px;
+    }
+
+    /* Container control Card to 3 */
+    .container {
+        display: flex;
+        flex-wrap: wrap; /* ឱ្យវាធ្លាក់ចុះក្រោម */
+        gap: 20px; 
+        justify-content: center;
+    }
+
+    /*  Card  */
+    .card {
+        background: white;
+        width: calc(33.33% - 20px); /* កំណត់ឱ្យមាន ៣ ក្នុងមួយជួរ */
+        min-width: 280px; /* កំណត់ទំហំតូចបំផុតការពារកុំឱ្យតូចពេក */
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px); 
+    }
+
+    /* Profile */
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        background: #e9ecef;
+        margin: 0 auto 15px;
+        border-radius: 10px;
+    }
+
+    .name {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .university {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    /* Facebook */
+    .fb-btn {
+        display: inline-block;
+        background-color: #1877f2;
+        color: white;
+        padding: 10px 25px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    .fb-btn:hover {
+        background-color: #145dbf;
+    }
+
+    /* for mobile phone output 1  */
+    @media (max-width: 768px) {
+        .card {
+            width: 100%;
+        }
+    }
+/* ----------------for footer ------------ */
+.footer {
+    background: #0d1117;
+    color: white;
+    padding: 40px 20px 10px;
+    margin-top: 50px;
+    position: sticky;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: #003759;
+}
+
+.fb-link {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.fb-link:hover {
+    color: #001e31;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+/* ---------------------break footer---------------- */
+/* -------for button ----- */
+#btn:hover{
+    background-color: blue;
+    color:white;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 4px 2px rgb(102, 102, 245);
+    border:1px solid none;
+}
+
+/* ---------------for hover ------------ */
+.person:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    .data_of_personal{
+        display: block;
+    }
+}
+/* --------------------------------------- */
+.text_in_div_data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 190px;
+}
+.facebook_logo{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.controll_style_logo_fb_data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 190px;
+    gap: 10px;
+}
+/* --------------------------------------------- */
+
+/* ----------------- for scroll picture ---------- */
+.box_for_photo{
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    display: flex;
+    gap: 10%;
+}
+
+/* ------------put the pictures---------------- */
+
+
+#profile{
+    width: 120px;
+    height: 120px;
+    background: #e1e4e8;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+/* -----------list data left -------------------- */
+/* ប្តូរពណ៌ Sidebar ឱ្យស្រឡះភ្នែកជាងមុន និងដាក់ padding */
+.sidebar {
+    background-color: #f4f6f8;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 100px;
+}
+
+/* រចនាប្រអប់ព័ត៌មាន */
+.sidebar-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.sidebar-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #3f3ffd;
+    padding-bottom: 5px;
+}
+
+/* រចនាបញ្ជីខួបកំណើត */
+.birthday-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.birthday-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.birthday-list li:last-child {
+    border-bottom: none;
+}
+
+.bd-name {
+    font-weight: bold;
+    color: #555;
+}
+
+.bd-date {
+    color: #888;
+    font-size: 14px;
+}
+
+/* រចនាសាលរូបភាពអនុស្សាវរីយ៍ */
+.memory-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ដាក់ ២ ជួរឈរ */
+    gap: 10px;
+}
+
+.memory-gallery img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.memory-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* រចនាតំណភ្ជាប់រហ័ស */
+.sidebar-link {
+    display: block;
+    color: #3f3ffd;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.sidebar-link:hover {
+    text-decoration: underline;
+}
+.section1{
+    scroll-behavior: smooth;
+    overflow-y: auto;
+
+}
+
+/* -------------btn uplote -------------- */
+.btn_uplote{
+    position: absolute;
+    right: 20%;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: #003759;
+    color: white;
+}
+.btn_uplote:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .btn_uplote{
+        display: none;
+    }
+}
+/* ----------- Element for input------------- */
+.fixe_form{
+    position: fixed;
+    top: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2px;
+    width: 60%;
+    height: 50%;
+    background-color:#003759;
+    display: none;
+}
+.form_input{
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.text_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+.form_button{
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 15%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--primary-blue);
+    color: white;
+}
+.form_button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}

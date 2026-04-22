@@ -1,0 +1,194 @@
+/* ការរៀបចំទូទៅ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; }
+
+/* Header */
+.box-header {
+    background: #0d1117; color: white;
+    padding: 15px 5%; position: fixed; width: 100%; top: 0; z-index: 1000;
+}
+.header-container { display: flex; justify-content: space-between; align-items: center; }
+.nav-links { display: flex; gap: 20px; }
+.text { cursor: pointer; transition: 0.3s; }
+.text:hover { color: #3f3ffd; }
+.account-box { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+.user-icon { width: 30px; height: 30px; background: #ddd; border-radius: 50%; background-size: cover; background-position: center;background-image: url('https://static.vecteezy.com/system/resources/previews/006/732/119/non_2x/account-icon-sign-symbol-logo-design-free-vector.jpg'); }
+
+/* Main Section */
+.controll_section { margin-top: 100px; padding: 20px; }
+.flex_for_section { display: flex; gap: 20px; max-width: 1200px; margin: auto; }
+
+/* Sidebar */
+.section1 { flex: 1; }
+.sidebar-box { background: white; padding: 15px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.sidebar-title { border-bottom: 2px solid #3f3ffd; padding-bottom: 5px; margin-bottom: 10px; font-size: 18px; }
+.birthday-list { list-style: none; }
+.birthday-list li { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px solid #eee; }
+
+/* Content Section */
+.section2 { flex: 3; }
+.search-container { text-align: center; margin-bottom: 30px; }
+.form { display: flex; gap: 10px; justify-content: center; }
+.search { padding: 10px; width: 70%; border: 1px solid #3f3ffd; border-radius: 8px; }
+.btn { padding: 10px 25px; background: #3f3ffd; color: white; border: none; border-radius: 8px; cursor: pointer; }
+
+/* Footer */
+.footer { background: #0d1117; color: white; padding: 40px 5% 20px; margin-top: 50px; }
+.footer-container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+.footer-bottom { text-align: center; border-top: 1px solid #333; margin-top: 20px; padding-top: 10px; font-size: 14px; }
+
+/* --- RESPONSIVE FOR PHONE --- */
+@media (max-width: 768px) {
+    .header-container { flex-direction: column; gap: 15px; }
+    .nav-links { display: none; } /* លាក់ Menu លើទូរសព្ទដើម្បីកុំឱ្យញ៉េរញ៉ៃ */
+    .flex_for_section { flex-direction: column; }
+    .search { width: 100%; }
+    .form { flex-direction: column; }
+    .footer-container { flex-direction: column; text-align: center; }
+}
+.section1{position: fixed; top: 100px; left: 0; height: calc(100% - 100px); overflow-y: auto; background-color: rgba(255, 255, 255, 0.8); padding: 20px; width: 250px;}
+.section1{display: none;}
+/* -----------for  put small profile ------------- */
+.for_profile{border: 1px solid black;border-radius: 30%;width: 200px;height: 200px;background-color: white;}
+.controll_name_profile{display: flex;justify-content: center;align-items: center;margin:auto;gap:10px}
+.for-logo{border: 1px solid rgb(34, 0, 255);border-radius: 50%;width: 40px;height: 40px;background-size: cover;background-position: center;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/042/148/655/small/facebook-logo-facebook-social-media-icon-free-png.png');
+}
+
+/* -================ for style button =========================== */
+.btn_style{border: 1px solid blue;border-radius: 10px;width: 100px;height: 50px;background-color: rgba(0, 0, 255, 0.8);color: white;cursor: pointer;}
+
+/* -------------------for hover element ----------------- */
+.controll_all_data_person:hover{box-shadow: 0 0 5px 3px gray;transform: scale(1.1);transition: all 0.3s ease;cursor: pointer;}
+button:hover{transform: scale(1.1);transition: all 0.3s ease;cursor: pointer;}
+
+/* ----===================== | place for Responsive | ==============================---- */
+
+/* --- ការរៀបចំសម្រាប់ទូរសព្ទ --- */
+@media (max-width: 768px) {
+    
+    /* ១. រៀបចំ Header ឱ្យមកនៅកណ្តាល */
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: none; 
+    }
+
+    /* ២. រៀបចំ Sidebar និង Content ឱ្យនៅពីលើគ្នា */
+    .flex_for_section {
+        flex-direction: column;
+    }
+
+    .section1, .section2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* ៣. សម្រួល Profile Card ឱ្យមើលទៅស្អាតលើទូរសព្ទ */
+    .controll_name_profile {
+        flex-direction: column;
+        padding: 20px !important;
+        text-align: center;
+    }
+
+    .controll_name_profile div {
+        flex-direction: column;
+        gap: 5px !important;
+    }
+
+    .for_profile img {
+        width: 150px !important; 
+        height: 150px !important;
+        margin-bottom: 15px;
+    }
+
+    /* ៤. សម្រួលប៊ូតុង និង Input Search */
+    .form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search {
+        width: 100% !important;
+    }
+
+    .btn {
+        width: 100% !important;
+    }
+
+    /* ៥. សម្រួល Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* --- Responsive Header & Content for Phone --- */
+@media (max-width: 768px) {
+    
+    /* ១. រៀបចំ Header កុំឱ្យបាត់ Menu */
+    .box-header {
+        position: fixed;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links .text {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .account-box {
+        margin-top: 5px;
+    }
+
+    /* ២. រៀបចំ Layout Sidebar និង Profile Cards */
+    .flex_for_section {
+        flex-direction: column;
+        margin-top: 140px;
+    }
+
+    .section1, .section2 {
+        width: 100% !important;
+    }
+
+    /* ៣. សម្រួល Profile Card ឱ្យមើលទៅស្អាត (រូបថតនៅពីលើ ឈ្មោះនៅពីក្រោម) */
+    .controll_name_profile {
+        flex-direction: column !important; 
+        text-align: center;
+        padding: 15px !important;
+    }
+
+    .controll_name_profile div {
+        flex-direction: column !important;
+        gap: 5px !important;
+    }
+
+    .for_profile img {
+        width: 140px !important; 
+        height: 140px !important;
+        border-radius: 50% !important;
+    }
+
+    /* ៤. ប៊ូតុង Visit Profile ឱ្យរីកពេញទទឹងស្រួលចុច */
+    .btn_style {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
