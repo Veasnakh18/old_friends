@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Old Friend</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="login-wrapper">
+    <div class="login-box">
+        <div class="login-header">
+            <h1>Old Friend</h1>
+            <p>សូមបញ្ចូលគណនីរបស់អ្នកដើម្បីបន្ត</p>
+        </div>
+
+        <form id="fullLoginForm">
+            <div class="input-field">
+                <label>Email Address</label>
+                <input type="email" id="userEmail" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="input-field">
+                <label>Password</label>
+                <input type="password" id="userPassword" placeholder="Password" required>
+            </div>
+
+            <div class="login-options">
+                <label><input type="checkbox"> ចងចាំខ្ញុំ</label>
+                <a href="#">ភ្លេចលេខសម្ងាត់?</a>
+            </div>
+
+            <button type="submit" id="loginBtn" class="main-btn">
+                <span class="btn-text">ចូលប្រើប្រាស់</span>
+                <div class="loader" id="loader"></div>
+            </button>
+        </form>
+
+        <p class="signup-link">មិនទាន់មានគណនី? <a href="#">ចុះឈ្មោះទីនេះ</a></p>
+    </div>
+    <button style="border: 1px solid black;border-radius: 5px;width:20%;height:40px;" onclick="window.location.href='../index.html'">Back</button>
+</div>
+
+
+<script src="login.js"></script>
+</body>
+</html>
