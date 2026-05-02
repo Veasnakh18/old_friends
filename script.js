@@ -68,7 +68,6 @@ const form = document.getElementById("form");
 const btn_add = document.getElementById("btn_add");
 
 // --- Show Form Logic ---
-// Ensure btn_uplote exists in your HTML before adding the listener
 if (btn_uplote) {
     btn_uplote.addEventListener("click", () => {
         show_form.style.display = "block";
@@ -82,21 +81,20 @@ close.addEventListener("click", () => {
 
 // --- Add Data Logic ---
 btn_add.addEventListener("click", (event) => {
-    // Prevent the page from refreshing (default form behavior)
+    
     event.preventDefault(); 
 
-    // Capture values at the MOMENT of clicking
+    
     const userNameValue = document.getElementById("UserName_input").value;
     const schoolValue = document.getElementById("school_input").value;
     const imageInput = document.getElementById("input_image");
 
-    // Check if fields are empty
+    
     if (userNameValue.trim() === "" || schoolValue.trim() === "") {
         alert("Please enter both Name and University!");
         return;
     }
 
-    // Process the data (Example: log it)
     console.log("User Name:", userNameValue);
     console.log("University:", schoolValue);
     
@@ -104,7 +102,6 @@ btn_add.addEventListener("click", (event) => {
         console.log("File uploaded:", imageInput.files[0].name);
     }
 
-    // Success! Clear the form and hide it
     form.reset();
     show_form.style.display = "none";
 });
